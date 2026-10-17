@@ -1,0 +1,4 @@
+,RMSE,MAE,R2
+Baseline (media),20.446,17.116,-0.0
+Regresión lineal,16.501,11.809,0.349
+Gradient Boosting,15.106,10.53,0.454
