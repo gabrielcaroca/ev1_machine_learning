@@ -3,7 +3,7 @@
 **Evaluación Parcial N°2 — MLY1101 Machine Learning (DuocUC)**
 **Caso C: Inteligencia musical y predicción de popularidad de canciones (Spotify Tracks)**
 
-Integrantes: _(completar)_
+Integrantes: Gabriel Caroca
 
 ---
 
@@ -153,7 +153,7 @@ Los géneros (`iranian`, `latin`, `romance`, `k-pop`) están entre las variables
 
 **Técnica:** K-Means sobre 9 audio features estandarizadas (`danceability`, `energy`, `loudness`, `speechiness`, `acousticness`, `instrumentalness`, `liveness`, `valence`, `tempo`). El género y `popularity` **no** entran al algoritmo: se usan después para interpretar los grupos.
 
-**Elección de k = 6:** el codo no muestra un quiebre claro; la silueta es máxima con k = 2 (0,26) pero solo separa "intensas" de "suaves", poco útil para el negocio. Con k = 6 (silueta 0,19, máximo local) los grupos son interpretables y coinciden con familias de géneros. La silueta baja indica grupos con solapamiento: son tendencias, no categorías cerradas.
+**Elección de k = 6:** el codo no muestra un quiebre claro; la silueta es máxima con k = 2 (0,26) pero solo separa "intensas" de "suaves", poco útil para el negocio. Con k = 6-7; se eligió 6 por interpretabilidad, la diferencia es mínima (silueta 0,19, máximo local) los grupos son interpretables y coinciden con familias de géneros. La silueta baja indica grupos con solapamiento: son tendencias, no categorías cerradas.
 
 | Cluster | Perfil | Géneros característicos | Canciones | Popularity media | % top |
 |---|---|---|---|---|---|
